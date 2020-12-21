@@ -26,7 +26,7 @@ weatherform.addEventListener('submit', (e)=>{
             errorMessage.textContent = "Error: " + data.error;
         } else{
             errorMessage.textContent = '';
-            dataMessage.textContent = "The location you entered is: " + data.location + "The forecast is: " + data.forecast;
+            dataMessage.textContent = "The location you entered is: " + data.location + " The forecast is: " + data.forecast;
             
             // console.log(data.address);
         }
