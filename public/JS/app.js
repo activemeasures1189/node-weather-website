@@ -19,7 +19,7 @@ const search = document.querySelector('input');
 weatherform.addEventListener('submit', (e)=>{
     e.preventDefault();
     const location = search.value; // VALUE extracts the term entered in the search input field
-    fetch('http://localhost:3000/weather?address=' + location).then((response)=>{
+    fetch('/weather?address=' + location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             dataMessage.textContent = '';

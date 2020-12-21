@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const forecast = require('./utlis/forecast');
 const geocode = require('./utlis/geocode');
-const port = 3000;
+const port = process.env.PORT || 3000; // Port for Heroku
 const hbs = require('hbs');
 
 //Define Paths for Express Config
