@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback)=>{
             callback('Location not found', undefined);
 
         } else{
-            callback(undefined, response.body.current.weather_descriptions[0] + ". It is currently " + response.body.current.temperature + " degrees out. The current time is " + response.body.current.observation_time)
+            callback(undefined, response.body.current.weather_descriptions[0] + ". It is currently " + response.body.current.temperature + " degrees out. The current time is " + response.body.location.localtime)
         }
     });
 
