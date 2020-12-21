@@ -30,8 +30,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) =>{
     // res.send('<h1>This is abouts page..</h1>');
     res.render('about',{
-        'location': 'Perth',
-        'forecast': 'Cloudy',
+        'title': 'About me',
         'name': 'Saurabh'
     });
     
