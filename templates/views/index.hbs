@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/image/weather.png">
+    <link rel="stylesheet" href="/Css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="error"></p>
+        <p id="data"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>
